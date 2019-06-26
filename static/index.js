@@ -13,3 +13,6 @@ function sdBarCall() {
     }
 }
 
+function aboutCA() {
+    document.location.href = "#about-ca";
+}
