@@ -94,11 +94,12 @@ nav {
 }
 
 .presentation,
-.about-ca {
+.about-ca,
+.footer {
     display: flex;
     /* width: 90%; */
     margin: auto;
-    min-height: 80vh;
+    min-height: 100vh;
     align-items: center;
 }
 .introduction,
@@ -178,10 +179,47 @@ nav {
 }
 .sub-aca-text {
     padding: 20px 30px 0px 30px;
+    margin-bottom: 10px;
     font-size: 22px;
     color: white;
     text-align: justify;
 }
+
+.footer {
+    flex-direction: column;
+    width: 100%;
+    min-height: 100px;
+    /* margin: auto; */
+}
+.line-footer {
+    margin: auto;
+    width: 50%;
+    height: 2px;
+
+    border: 1px dashed #585772;
+}
+.f-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+.informations {
+    margin-bottom: 40px;
+}
+.informations p {
+    color: #585772;
+    font-size: 15px;
+}
+.informations p a {
+    color: #585772;
+}
+.informations p a:hover {
+    color: #03749d;
+}
+
+
 
 .big-circle {
     position: fixed;
@@ -205,6 +243,7 @@ nav {
     left: 20%;
     z-index: -1;
 }
+
 
 @keyframes drop {
     0%{
