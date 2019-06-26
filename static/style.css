@@ -179,13 +179,13 @@ nav {
 }
 .sub-aca-text {
     padding: 20px 30px 0px 30px;
-    margin-bottom: 10px;
     font-size: 22px;
     color: white;
     text-align: justify;
 }
 
 .footer {
+    margin-top: 20px;
     flex-direction: column;
     width: 100%;
     min-height: 100px;
@@ -193,7 +193,7 @@ nav {
 }
 .line-footer {
     margin: auto;
-    width: 50%;
+    width: 40%;
     height: 2px;
 
     border: 1px dashed #585772;
@@ -204,11 +204,13 @@ nav {
     justify-content: center;
     align-items: center;
     width: 90%;
+    margin-top: 10px;
 }
 .informations {
     margin-bottom: 40px;
 }
 .informations p {
+    text-align: center;
     color: #585772;
     font-size: 15px;
 }
