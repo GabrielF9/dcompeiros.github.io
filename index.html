@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css" />
     <title>DCompeiros</title>
 </head>
+
 <body>
     <header>
         <a class="logo-link" href="#">
@@ -21,7 +24,7 @@
             <ul class="nav-links">
                 <li><a class="nav-link" href="#">Início</a></li>
                 <li><a class="nav-link" href="#">Sobre Nós</a></li>
-                <li><a class="nav-link" href="#">Contato</a></li>
+                <li><a class="nav-link" href="#contact">Contato</a></li>
             </ul>
             <div class="sd-menu" id="sd-menu" onclick="sdBarCall()">
                 <div class="bar1"></div>
@@ -32,7 +35,7 @@
                 <ul class="sd-nav-links">
                     <li onclick="sdBarCall()"><a class="sd-nav-link" href="#">Início</a></li>
                     <li onclick="sdBarCall()"><a class="sd-nav-link" href="#">Sobre Nós</a></li>
-                    <li onclick="sdBarCall()"><a class="sd-nav-link" href="#">Contato</a></li>
+                    <li onclick="sdBarCall()"><a class="sd-nav-link" href="#contact">Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +47,7 @@
                 <div class="intro-text">
                     <h1>O que é o DCompeiros?</h1>
                     <p>Nós somos uma nova cara para o CALICOMP.<br>
-                        Somos uma chapa que concorre à eleição do Centro 
+                        Somos uma chapa que concorre à eleição do Centro
                         Acadêmico Livre de Computação, que tem como ideal
                         principal a união de todos os alunos do departamento.</p>
                 </div>
@@ -55,12 +58,8 @@
             <div class="cover">
                 <img src="./img/logo.png" alt="dcompeiros" />
             </div>
-
-            <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
-            <img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
-            <img class="small-circle" src="./img/small-eclipse.svg" alt="" />
         </section>
-        
+
         <section class="about-ca" id="about-ca">
             <div class="m-container">
                 <div class="cover">
@@ -69,34 +68,73 @@
                 <div class="about-calicomp">
                     <div class="aca-text">
                         <h1>O que é o CALICOMP?</h1>
-                        <p>O Centro Académico Livre de Computação (CALICOMP) 
-                            é uma entidade sem fins lucrativos, representativa 
-                            dos estudantes dos cursos de Ciência da Computação, 
-                            Engenharia de Computação e Sistemas de Informação da 
-                            Universidade Federal de Sergipe, constituído, organizado, 
-                            dirigido e livremente eleito pelos estudantes do nível de 
+                        <p>O Centro Académico Livre de Computação (CALICOMP)
+                            é uma entidade sem fins lucrativos, representativa
+                            dos estudantes dos cursos de Ciência da Computação,
+                            Engenharia de Computação e Sistemas de Informação da
+                            Universidade Federal de Sergipe, constituído, organizado,
+                            dirigido e livremente eleito pelos estudantes do nível de
                             graduação do Departamento de Computação (DCOMP).</p>
                     </div>
                 </div>
             </div>
-            <p class="sub-aca-text">O CALICOMP e o DCOMP não são construídos pelos setores ou pelos professores 
-                em atuação, mas sim por todos nós, alunos em parceria com servidores, todos 
-                com um mesmo foco, transformar o DCOMP num departamento que atenda nossos 
-                direitos e supra nossas necessidades, para que realmente nos sintamos 
+            <p class="sub-aca-text">O CALICOMP e o DCOMP não são construídos pelos setores ou pelos professores
+                em atuação, mas sim por todos nós, alunos em parceria com servidores, todos
+                com um mesmo foco, transformar o DCOMP num departamento que atenda nossos
+                direitos e supra nossas necessidades, para que realmente nos sintamos
                 acolhidos e fazendo parte da universidade.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-area">
+                <div class="contact-us">
+                    <div class="contact-title">
+                        <h1>Entre em contato</h1>
+                    </div>
+                    <div class="form">
+                        <div class="form-items">
+                            <input type="text" class="input" placeholder="Nome">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-items">
+                            <input type="text" class="input" placeholder="E-mail">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-items">
+                            <textarea class="input message" cols="30" rows="10" placeholder="Mensagem"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="btn">
+                        Enviar
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+
+                    <div class="social-icons">
+                        <div class="facebook">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="footer">
             <div class="line-footer"></div>
             <div class="f-information">
                 <div class="informations">
-                    <p>&copy; Copyright 2019 | Todos os direitos resevados | 
+                    <p>&copy; Copyright 2019 | Todos os direitos resevados |
                         Design e desenvolvimento por <a href="github.com/gabrielf9">Gabriel Ferreira</a>.</p>
                 </div>
             </div>
         </section>
+
+        <img class="big-circle" src="./img/big-eclipse.svg" alt="" />
+        <img class="medium-circle" src="./img/mid-eclipse.svg" alt="" />
+        <img class="small-circle" src="./img/small-eclipse.svg" alt="" />
     </main>
 
     <script src="static/index.js"></script>
 </body>
+
 </html>

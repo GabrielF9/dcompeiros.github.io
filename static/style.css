@@ -95,6 +95,7 @@ nav {
 
 .presentation,
 .about-ca,
+.contact,
 .footer {
     display: flex;
     /* width: 90%; */
@@ -103,7 +104,8 @@ nav {
     align-items: center;
 }
 .introduction,
-.about-calicomp {
+.about-calicomp,
+.contact-area {
     flex: 1;
 }
 .intro-text {
@@ -184,6 +186,91 @@ nav {
     text-align: justify;
 }
 
+.contact-us{
+    width: 500px;
+    background: #ccc;
+    padding: 50px;
+    margin: 100px auto;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+.contact-title h1{
+    color: #03749d;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.form,
+.form-items{
+    width: 100%;
+}
+.form-items .input{
+    width: 100%;
+    margin-bottom: 12px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    background: #ebeef1;
+    border: 0px;
+    outline: none;
+}
+.form-items .input.message{
+    height: 125px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    resize: none;
+}
+.btn{
+    border: 2px solid #039dd5;
+    text-align: center;
+    color: #039dd5;
+    padding: 12px;
+    cursor: pointer;
+}
+.btn:hover {
+    transition: 0.4s;
+    background: #039dd5;
+    color: white;
+}
+.btn .fas{
+    margin-left: 10px;
+    font-size: 12px;
+}
+.form-items{
+    position: relative;
+}
+.form-items .fas{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #9a99aa;
+}
+.social-icons{
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    width: 200px;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+.social-icons div .fab{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.social-icons div.facebook{
+    background: #039dd5;
+}
+
 .footer {
     margin-top: 20px;
     flex-direction: column;
@@ -221,8 +308,6 @@ nav {
     color: #03749d;
 }
 
-
-
 .big-circle {
     position: fixed;
     top: 0px;
@@ -245,7 +330,6 @@ nav {
     left: 20%;
     z-index: -1;
 }
-
 
 @keyframes drop {
     0%{
@@ -316,6 +400,65 @@ nav {
     }
     .cover img {
         height: 80%;
+    }
+
+    .contact {
+        min-height: 50vh;
+    }
+    .contact-us{
+        width: 80vw;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+    .contact-title h1{
+        color: #03749d;
+        letter-spacing: 5px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .form,
+    .form-items{
+        width: 100%;
+    }
+    .form-items .input{
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 15px 40px;
+        box-sizing: border-box;
+        background: #ebeef1;
+        border: 0px;
+        outline: none;
+    }
+    .form-items .input.message{
+        height: 125px;
+        margin-bottom: 30px;
+        padding: 15px 15px;
+        resize: none;
+    }
+    .btn{
+        border: 2px solid #039dd5;
+        text-align: center;
+        color: #039dd5;
+        padding: 12px;
+        cursor: pointer;
+    }
+    .btn:hover {
+        transition: 0.4s;
+        background: #039dd5;
+        color: white;
+    }
+    .btn .fas{
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .form-items{
+        position: relative;
+    }
+    .form-items .fas{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: #9a99aa;
     }
 
     .small-circle,
