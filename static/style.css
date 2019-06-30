@@ -219,12 +219,17 @@ nav {
     padding: 15px 15px;
     resize: none;
 }
+.btn-div {
+    text-align: center;
+}
 .btn{
     border: 2px solid #039dd5;
     text-align: center;
     color: #039dd5;
     padding: 12px;
     cursor: pointer;
+    align-content: center;
+    align-self: center;
 }
 .btn:hover {
     transition: 0.4s;
