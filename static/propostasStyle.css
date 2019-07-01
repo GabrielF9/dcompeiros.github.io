@@ -1,0 +1,86 @@
+main section h4 {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 500;
+    font-size: 18px;
+}
+span {
+    color: #4a86e8;
+}
+
+.proposta {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.texto-proposta {
+    padding: 10px 0px 0px 0px;
+    text-align: justify;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.line-div-solid {
+    margin: auto;
+    margin-top: 10px;
+    width: 70%;
+    height: 2px;
+
+    border: 1px solid #585772;
+}
+.line-div-dashed {
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 2px;
+
+    border: 1px dashed #585772;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.intro h1 {
+    text-align: center;
+    font-weight: 500;
+}
+
+.eventos ul,
+.extras ul {
+    list-style: none;
+}
+.eventos ul li,
+.extras ul li{
+    font-size: 16px;
+}
+
+.exit {
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+    main section h4 {
+        font-size: 16px;
+    }
+    .proposta {
+        width: 90%;
+    }
+    .texto-proposta {
+        font-size: 14px;
+    }
+    .eventos ul li,
+    .extras ul li{
+        font-size: 14px;
+    }
+}
