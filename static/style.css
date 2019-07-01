@@ -135,6 +135,7 @@ nav {
     height: 55px;
     cursor: pointer;
     font-size: 16px;
+    margin-right: 40px;
 }
 .cta-select:hover {
     transition: 0.4s;
@@ -401,7 +402,10 @@ nav {
         font-size: 18px;
     }
     .cta {
-        padding: 10px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
+    }
+    .cta-select {
+        margin: 0px 0px 10px 0px;
     }
     .cover img {
         height: 80%;

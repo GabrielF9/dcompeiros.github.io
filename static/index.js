@@ -13,7 +13,7 @@ function sdBarCall() {
     }
 }
 
-$("body > header > nav > ul > li > a").on('click', function (e) {
+$('body > header > nav > ul > li > a[href^="#"]').on('click', function (e) {
     e.preventDefault();
 
     var id = $(this).attr('href');
@@ -27,10 +27,10 @@ $("body > header > nav > ul > li > a").on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: targetOffset
-    }, 500);
+    }, 1000);
 });
 
-$("body > header > nav > div.sd-panel > ul > li > a").on('click', function (e) {
+$('body > header > nav > div.sd-panel > ul > li > a[href^="#"]').on('click', function (e) {
     let sd = document.querySelector("#sd-menu");
 
     sd.classList.toggle("change");
@@ -57,7 +57,7 @@ $("body > header > nav > div.sd-panel > ul > li > a").on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: targetOffset
-    }, 500);
+    }, 1000);
 });
 
 $("#cta-select").on('click', function (e) {
@@ -67,7 +67,7 @@ $("#cta-select").on('click', function (e) {
     
     var targetOffset;
     if (window.innerWidth <= 430) {
-        targetOffset = $(id).offset().top + 320;
+        targetOffset = $(id).offset().top + 400;
     } else if (window.innerWidth <= 520) {
         targetOffset = $(id).offset().top + 350;
     } else if (window.innerWidth <= 815) {
@@ -80,5 +80,5 @@ $("#cta-select").on('click', function (e) {
 
     $('html, body').animate({
         scrollTop: targetOffset
-    }, 500);
+    }, 1000);
 });
